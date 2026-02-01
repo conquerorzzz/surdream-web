@@ -33,11 +33,11 @@ coverage
 
 # Vitest
 __screenshots__/
-# .gitignore
-# 忽略所有源文件
-src/
-# 忽略除 dist 外的所有文件
-/*
-!/dist
-# 确保 .gitignore 本身不被忽略
+
+
+# 只允许 dist
+!dist/
+!dist/**
+
+# 允许 gitignore 本身
 !.gitignore
